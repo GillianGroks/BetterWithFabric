@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "betterwithfabric",
+  "version": "${version}",
+
+  "name": "BetterWithFabric",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "GillianGroks"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/gilliangroks/betterwithfabric"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.gilliangroks.betterwithfabric.BetterWithFabric"
+    ]
+  },
+  "mixins": [
+    "betterwithfabric.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
