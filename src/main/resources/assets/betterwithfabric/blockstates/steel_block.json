@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "betterwithfabric:block/steel_block"
+    }
+  }
+}

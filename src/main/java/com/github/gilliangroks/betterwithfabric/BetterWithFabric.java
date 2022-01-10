@@ -1,5 +1,7 @@
 package com.github.gilliangroks.betterwithfabric;
 
+import com.github.gilliangroks.betterwithfabric.registry.BlockRegistry;
+import com.github.gilliangroks.betterwithfabric.registry.ItemRegistry;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,8 +12,8 @@ public class BetterWithFabric implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Initializing " + MOD_ID);
+		BlockRegistry.initialize();
+		ItemRegistry.initialize();
 	}
 }

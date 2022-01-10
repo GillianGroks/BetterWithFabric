@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "betterwithfabric:steel_ingot"
+    }
+  ],
+  "result": {
+    "item": "betterwithfabric:steel_nugget",
+    "count": 9
+  }
+}

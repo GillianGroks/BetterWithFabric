@@ -14,12 +14,15 @@
   },
 
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/betterwithfabric/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
       "com.github.gilliangroks.betterwithfabric.BetterWithFabric"
+    ],
+    "client": [
+      "com.github.gilliangroks.betterwithfabric.BetterWithFabricClient"
     ]
   },
   "mixins": [
