@@ -8,7 +8,6 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -26,9 +25,10 @@ public class BlockRegistry {
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()));
 
     public static final Block HEMP_CROP = registerBlockWithoutBlockItem("hemp_crop",
-            new HempBlock(FabricBlockSettings.of(Material.PLANT).nonOpaque().breakInstantly().ticksRandomly().sounds(BlockSoundGroup.BAMBOO)));
+            new HempBlock(FabricBlockSettings.of(Material.PLANT).nonOpaque().noCollision().breakInstantly().ticksRandomly().sounds(BlockSoundGroup.CROP)));
 
 
+    // Helper methods
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(MOD_ID, name), block);
     }

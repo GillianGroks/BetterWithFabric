@@ -1,12 +1,12 @@
 {
   "variants": {
-    "age=0": { "model": "betterwithfabric:block/hemp_stage_0" },
-    "age=1": { "model": "betterwithfabric:block/hemp_stage_1" },
-    "age=2": { "model": "betterwithfabric:block/hemp_stage_2" },
-    "age=3": { "model": "betterwithfabric:block/hemp_stage_3" },
-    "age=4": { "model": "betterwithfabric:block/hemp_stage_4" },
-    "age=5": { "model": "betterwithfabric:block/hemp_stage_5" },
-    "age=6": { "model": "betterwithfabric:block/hemp_stage_6" },
-    "age=7": { "model": "betterwithfabric:block/hemp_stage_7" }
+    "age=0": { "model": "betterwithfabric:block/hemp_crop_stage_0" },
+    "age=1": { "model": "betterwithfabric:block/hemp_crop_stage_1" },
+    "age=2": { "model": "betterwithfabric:block/hemp_crop_stage_2" },
+    "age=3": { "model": "betterwithfabric:block/hemp_crop_stage_3" },
+    "age=4": { "model": "betterwithfabric:block/hemp_crop_stage_4" },
+    "age=5": { "model": "betterwithfabric:block/hemp_crop_stage_5" },
+    "age=6": { "model": "betterwithfabric:block/hemp_crop_stage_6" },
+    "age=7": { "model": "betterwithfabric:block/hemp_crop_stage_7" }
   }
 }

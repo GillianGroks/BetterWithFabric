@@ -2,10 +2,7 @@ package com.github.gilliangroks.betterwithfabric.registry;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -25,8 +22,8 @@ public class ItemRegistry {
             new Item(new FabricItemSettings().group(ITEM_GROUP)));
 
     public static final Item HEMP_SEEDS = registerItem("hemp_seeds",
-            new AliasedBlockItem(BlockRegistry.HEMP_CROP,
-                    new FabricItemSettings().group(ITEM_GROUP)));
+            new AliasedBlockItem(BlockRegistry.HEMP_CROP, (new FabricItemSettings().group(ITEM_GROUP))));
+
 
     public static final Item STEEL_INGOT = registerItem("steel_ingot",
             new Item(new FabricItemSettings().group(ITEM_GROUP)));
@@ -35,7 +32,7 @@ public class ItemRegistry {
             new Item(new FabricItemSettings().group(ITEM_GROUP)));
 
 
-    // Helper method to register items
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), item);
     }
