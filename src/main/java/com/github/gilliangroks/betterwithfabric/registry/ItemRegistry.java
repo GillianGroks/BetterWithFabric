@@ -22,7 +22,7 @@ public class ItemRegistry {
             new Item(new FabricItemSettings().group(ITEM_GROUP)));
 
     public static final Item HEMP_SEEDS = registerItem("hemp_seeds",
-            new AliasedBlockItem(BlockRegistry.HEMP_CROP, (new FabricItemSettings().group(ITEM_GROUP))));
+            new AliasedBlockItem(BlockRegistry.HEMP_CROP, new FabricItemSettings().group(ITEM_GROUP)));
 
 
     public static final Item STEEL_INGOT = registerItem("steel_ingot",
