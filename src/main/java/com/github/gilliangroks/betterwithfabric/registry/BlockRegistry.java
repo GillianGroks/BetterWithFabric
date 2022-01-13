@@ -3,6 +3,7 @@ package com.github.gilliangroks.betterwithfabric.registry;
 
 
 import com.github.gilliangroks.betterwithfabric.block.HempBlock;
+import com.github.gilliangroks.betterwithfabric.block.SteelDoorBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -23,6 +24,9 @@ public class BlockRegistry {
     // Define new Blocks
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()));
+
+    public static final Block STEEL_DOOR = registerBlock("steel_door",
+            new SteelDoorBlock(FabricBlockSettings.of(Material.METAL).nonOpaque()));
 
     public static final Block HEMP_CROP = registerBlockWithoutBlockItem("hemp_crop",
             new HempBlock(FabricBlockSettings.of(Material.PLANT).nonOpaque().noCollision().breakInstantly().ticksRandomly().sounds(BlockSoundGroup.CROP)));

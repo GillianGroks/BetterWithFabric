@@ -13,7 +13,7 @@ public class BetterWithFabric implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Initializing " + MOD_ID);
-		BlockRegistry.initialize();
 		ItemRegistry.initialize();
+		BlockRegistry.initialize();
 	}
 }
