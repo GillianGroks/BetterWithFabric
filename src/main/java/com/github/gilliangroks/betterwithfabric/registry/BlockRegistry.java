@@ -31,7 +31,6 @@ public class BlockRegistry {
     public static final Block HEMP_CROP = registerBlockWithoutBlockItem("hemp_crop",
             new HempBlock(FabricBlockSettings.of(Material.PLANT).nonOpaque().noCollision().breakInstantly().ticksRandomly().sounds(BlockSoundGroup.CROP)));
 
-
     // Helper methods
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(MOD_ID, name), block);
